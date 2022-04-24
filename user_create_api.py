@@ -3,9 +3,9 @@ import json
 
 if __name__ == '__main__':
 
-    ZABBIX_API_URL = "http://172.19.122.99/zabbix/api_jsonrpc.php"
-    UNAME = "api" #Type your user login in Zabbix
-    PWORD = "1234" #Type your users pass
+    ZABBIX_API_URL = "http://x.x.x.x/zabbix/api_jsonrpc.php"
+    UNAME = "xxx" #Type your user login in Zabbix
+    PWORD = "xxx" #Type your users pass
 
 api_login = requests.post(
     ZABBIX_API_URL, json={
@@ -32,7 +32,7 @@ user_create = requests.post(
                         "method": "user.create",
                         "params": {
                             "username": USERNAME,
-                            "passwd": "1234",          # LDAP user don't need this parameter, it's used only for local users
+                            "passwd": "xxx",          # LDAP user don't need this parameter, it's used only for local users
                             "roleid": "1",              # You need to check id of your role first
                             "usrgrps": [
                                 {
